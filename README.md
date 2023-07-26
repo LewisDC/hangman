@@ -8,14 +8,14 @@ In this project, we'll use GitHub to track changes to our code and save them onl
 
 ## Milestone 2: Create the variables for the game
 
-* Set up a local directory called Hangman.
-* Created a file named milestone_2.py which will contrain the code for this milestone.
-* Created a list of words, in this case 5 fruits and assigned the list to a variable called word_list.
+* Created a local version of the repo with *git clone*
+* Created a file named **milestone_2.py** which will contrain the code for this milestone.
+* Created a list of words, in this case 5 fruits and assigned the list to a variable called 'word_list'.
 * Imported the random module.
-* Used the random.choice method to assign a random word from word_list to the variable word.
-* I assigned this to the fucntion choice() which returns the variable word
+* Used the random.choice method to assign a random word from 'word_list' to the variable word.
+* I assigned this to the fucntion 'choice()' which returns the variable word
 
-* Used the input() method to request a letter from the user and assign it to the variable guess
+* Used the 'input()' method to request a letter from the user and assign it to the variable 'guess'
 * Created an if statement that checks if the length of the input is equal to 1 and is alphabetical:
 
     guess = input("Enter a letter")
@@ -26,4 +26,4 @@ In this project, we'll use GitHub to track changes to our code and save them onl
         print("Oops, That is not a valid input")
 
 * Created a README.md file and began documenting my experience
-* Uploaded file to Github repo
+* Uploaded files to Github repo
