@@ -13,17 +13,10 @@ In this project, we'll use GitHub to track changes to our code and save them onl
 * Created a list of words, in this case 5 fruits and assigned the list to a variable called 'word_list'.
 * Imported the random module.
 * Used the random.choice method to assign a random word from 'word_list' to the variable word.
-* I assigned this to the fucntion 'choice()' which returns the variable word
-
 * Used the 'input()' method to request a letter from the user and assign it to the variable 'guess'
 * Created an if statement that checks if the length of the input is equal to 1 and is alphabetical:
 
-    guess = input("Enter a letter")
-    if len(guess) == 1 and guess.isalpha():
-        print("Good guess!")
-        return guess
-    else:
-        print("Oops, That is not a valid input")
+![Alt text](image-1.png)
 
 * Created a README.md file and began documenting my experience
 * Uploaded files to Github repo
