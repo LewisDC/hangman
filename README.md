@@ -16,7 +16,7 @@ In this project, we'll use GitHub to track changes to our code and save them onl
 * Used the 'input()' method to request a letter from the user and assign it to the variable 'guess'
 * Created an 'if' statement that checks if the length of the input is equal to 1 and is alphabetical:
 
-![Alt text](image-1.png)
+![Alt text](/README_images/image-1.png)
 
 * Created a **README.md** file and began documenting my experience
 * Uploaded files to Github repo
@@ -34,14 +34,14 @@ In this project, we'll use GitHub to track changes to our code and save them onl
 * Created a new file **milestone_4.py** to house the code for this mielstone
 * Created the 'Hangman' class and defined the 'init' method with the attributes as per the image below:
 
-![Alt text](image.png)
+![Alt text](/README_images/image.png)
 
 I decided to define a method 'pick_random_word' to pick a random word and assigned it to the 'word' variable
 * Defined the 'check_guess' method similar to in milestone 3
 * Defined the 'ask_for_input' method, similar to milestone 3 a while loop is used to repeat the request for a valid input. Added a check to see if the guess has already been tried by recording each guess in the 'list_of_guesses' attribute and checking the list before the 'else' block which calls the 'check_guess' method.
 * Added code the 'check_guess' method to replace the underscores in the 'word_guessed' with the letters guessed by the user. I used the enumerate method to replace the corresponding index with the 'guess' as per below:
 
-![Alt text](image-3.png)
+![Alt text](/README_images/image-3.png)
 
 I also added a minus counter to reduce the variable num_letters.
 * Defined what happens if the guess is not in the word by adding a minus counter to the variable 'num_lives' in the 'else' block and then printing the lives remaining.
@@ -79,6 +79,6 @@ In the 'Hangman' class we have:
 
 Example output:
 
-![Alt text](image-4.png)
+![Alt text](/README_images/image-4.png)
 
 Hangman is a classic game that everyone is familiar with and I have really enjoyed working on this project.
