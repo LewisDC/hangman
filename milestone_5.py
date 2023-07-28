@@ -26,26 +26,19 @@ class Hangman:
 
 
     def __init__(self, word_list, num_lives = 5):
-        # list of words
+        
         self.word_list = word_list
-        # number of lives the player has at the start of the game
         self.num_lives = num_lives
-        # a list of the guesses that have already been tried
         self.list_of_guesses = []
-        # select a random word
         self.word = self.pick_random_word()
-        # blank list of underscores to store and display the guessed letters
         self.word_guessed = ["_"] * len(self.word)
-        # number of unique letters that have not been guessed yet
         self.num_letters = len(set(self.word))
 
     def pick_random_word(self):
         return random.choice(self.word_list)
 
     def check_guess(self, guess):
-        # convert the guessed letter to lowercase
         guess = guess.lower()
-        # check if the guessed letter is in the secret word
         if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
             # loop through the letters in self.word
@@ -56,20 +49,15 @@ class Hangman:
                     self.word_guessed[i] = letter
             # print current status of the secret word
             print(self.word_guessed)
-            # decrement number of letters left to guess
             self.num_letters -= 1
-        # if the guess letter is incorrect
         else:
-            # decrement number of lives
             self.num_lives -= 1
             print(f"Sorry. {guess} is not in the word. Try again.")
             print(f"You have {self.num_lives} lives left")
 
     def ask_for_input(self):
-        # underscore representation of the secret word
         print(self.word_guessed)
         while True:
-            # prompt the player to guess a letter
             guess = input("Guess a letter: ")
             # check if the guess is a single letter         
             if len(guess) != 1 or not(guess.isalpha()):
@@ -78,7 +66,6 @@ class Hangman:
             elif guess in self.list_of_guesses:
                 print("You already tried that letter")
             else:
-                # calls check_guess function
                 self.check_guess(guess)
                 # add the guessed letter to the list of guesses
                 self.list_of_guesses.append(guess)
