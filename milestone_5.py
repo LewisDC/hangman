@@ -25,12 +25,11 @@ class Hangman:
             # loop through the letters in self.word
             for i, letter in enumerate(self.word):
                 # check if the current looped letter is equal to the guess
-                if letter != "_" and guess == letter:
+                if letter == guess:
                     # set the underscore at that position to the correct letter
                     self.word_guessed[i] = letter
             print(self.word_guessed)
             self.num_letters -= 1
-            print(self.num_letters)
         else:
             self.num_lives -= 1
             print(f"Sorry. {guess} is not in the word. Try again.")
@@ -69,5 +68,5 @@ def play_game(word_list):
         elif game.ask_for_input():
             break
 
-word_list = ["apple", "orange", "strawberry", "blueberry", "blackberry", "banana", "grape", "grapefruit", "mango"]
+word_list = ["apple", "orange", "strawberry", "blueberry", "blackberry", "banana", "grape", "grapefruit", "mango", "pear", "raisin", "current", "peach", "kiwi"]
 play_game(word_list)

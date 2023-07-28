@@ -77,4 +77,8 @@ In the **Hangman** class we have:
 8. If **self.num_letters** becomes 0 during the process, it means the player has guessed all the letters correctly and won the game. In this case, the method prints "Congratulations. You won the game!" and returns True to signal the game outcome.
 9. The return statement inside the loop is used to break the loop and return the game outcome to the play_game function. The loop will continue asking for input until one of the return statements is executed, thus allowing the game to continue until either the player wins or loses.
 
-The function will keep running until the player wins the game or runs out of lives.
+Example output:
+
+![Alt text](image-4.png)
+
+Hangman is a classic game that everyone is familiar with and I have really enjoyed working on this project.
